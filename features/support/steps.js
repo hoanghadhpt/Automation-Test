@@ -91,6 +91,10 @@ Then('I expect response should have {string}', function (handler) {
   spec.response().should.have._(handler);
 });
 
+Then('I expect response should contains text: {int}', function (text) {
+  spec.response().should.have._(text);
+});
+
 Then(/^I store response at (.*) as (.*)$/, function (path, name) {
   spec.stores(name, path);
 });

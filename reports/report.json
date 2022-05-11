@@ -1,0 +1,87 @@
+[
+  {
+    "description": "  In order to keep Regres api stable\n  As a tester\n  I want to make sure that everything works as expected",
+    "elements": [
+      {
+        "description": "",
+        "id": "request;get-inventory",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Get Inventory",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I make a GET request to https://petstore.swagger.io",
+            "match": {
+              "location": "features/support/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I receive a response",
+            "match": {
+              "location": "features/support/steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 972000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I expect response should have a status 200",
+            "match": {
+              "location": "features/support/steps.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "request",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Request",
+    "tags": [],
+    "uri": "features/Regres.feature"
+  }
+]

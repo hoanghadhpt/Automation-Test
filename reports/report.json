@@ -14,6 +14,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
               "duration": 0
             }
           },
@@ -23,11 +31,11 @@
             "line": 8,
             "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "match": {
-              "location": "features/support/step_given.js:6"
+              "location": "features/support/steps.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -36,11 +44,11 @@
             "line": 9,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/step_given.js:43"
+              "location": "features/support/steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 1217000000
+              "duration": 912000000
             }
           },
           {
@@ -49,12 +57,11 @@
             "line": 10,
             "name": "I expect response should have a status 200",
             "match": {
-              "location": "features/support/step_then.js:6"
+              "location": "features/support/steps.js:51"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "Error: 'response()' should be called after resolving 'toss()'\n    at Spec.response (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:460:13)\n    at World.<anonymous> (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/step_then.js:7:8)"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -68,20 +75,19 @@
             "line": 11,
             "name": "I expect response should have a json schema",
             "match": {
-              "location": "features/support/step_then.js:34"
+              "location": "features/support/steps.js:79"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 5000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "Error: 'response()' should be called after resolving 'toss()'\n    at Spec.response (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:460:13)\n    at World.<anonymous> (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/step_end.js:8:8)"
+              "status": "passed",
+              "duration": 3000000
             }
           }
         ],
@@ -104,17 +110,24 @@
             }
           },
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 37,
             "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "match": {
-              "location": "features/support/step_given.js:6"
+              "location": "features/support/steps.js:11"
             },
             "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "Error: Duplicate request initiated. Existing request - GET https://fakerestapi.azurewebsites.net/api/v1/Activities\n    at validateRequestUrl (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:475:11)\n    at Spec.get (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:62:5)\n    at World.<anonymous> (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/step_given.js:7:29)"
+              "status": "passed",
+              "duration": 0
             }
           },
           {
@@ -123,33 +136,32 @@
             "line": 38,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/step_given.js:43"
+              "location": "features/support/steps.js:47"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 866000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 39,
-            "name": "I expect response should have a status 400",
+            "name": "I expect response should have a status 200",
             "match": {
-              "location": "features/support/step_then.js:6"
+              "location": "features/support/steps.js:51"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 0,
-              "error_message": "Error: 'response()' should be called after resolving 'toss()'\n    at Spec.response (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:460:13)\n    at World.<anonymous> (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/step_end.js:8:8)"
+              "status": "passed",
+              "duration": 3000000
             }
           }
         ],

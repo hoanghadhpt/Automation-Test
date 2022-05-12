@@ -36,4 +36,4 @@ Feature: Request
      Scenario: Just Another Scenario
      Given I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities
      When I receive a response
-     Then I expect response should have a status 400
+     Then I expect response should have a status 200

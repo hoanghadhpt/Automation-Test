@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1231000000
+              "duration": 1137000000
             }
           },
           {
@@ -67,7 +67,7 @@
           {
             "arguments": [
               {
-                "content": "{\n\"$schema\": \"http://json-schema.org/draft-04/schema#\",\n\"type\": \"array\",\n\"items\": {\n\"type\": \"object\",\n\"properties\": {\n \"id\": {\n   \"type\": \"integer\"\n },\n \"title\": {\n   \"type\": \"string\"\n },\n \"dueDate\": {\n   \"type\": \"string\"\n },\n \"completed\": {\n   \"type\": \"boolean\"\n }\n}\n}\n}",
+                "content": "{\n \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n \"type\": \"array\",\n \"items\": {\n   \"type\": \"object\",\n   \"properties\": {\n     \"id\": {\n       \"type\": \"integer\"\n     },\n     \"title\": {\n       \"type\": \"string\"\n     },\n     \"dueDate\": {\n       \"type\": \"string\"\n     },\n     \"completed\": {\n       \"type\": \"boolean\"\n     }\n   }\n }\n}",
                 "line": 12
               }
             ],
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 8000000
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 19000000
             }
           }
         ],
@@ -114,7 +114,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -140,20 +140,21 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1084000000
+              "duration": 1006000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 39,
-            "name": "I expect response should have a status 200",
+            "name": "I expect response should have a status 400",
             "match": {
               "location": "features/support/steps.js:51"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "failed",
+              "duration": 7000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: HTTP status 200 !== 400\n    + expected - actual\n\n    -200\n    +400\n\n    at Expect._validateStatus (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:96:14)\n    at Expect.validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:43:10)\n    at Have._validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:102:26)\n    at Have.status (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:27:10)\n    at World.<anonymous> (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/features/support/steps.js:52:31)"
             }
           },
           {
@@ -161,7 +162,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -201,13 +202,13 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"id\": 1,\n\"title\": \"Title Here\",\n\"dueDate\": \"2022-05-12T09:38:55.267Z\",\n\"completed\": true\n}",
+                "content": "{\n   \"id\": 1,\n   \"title\": \"Title Here\",\n   \"dueDate\": \"2022-05-12T09:38:55.267Z\",\n   \"completed\": true\n }",
                 "line": 44
               }
             ],
@@ -219,7 +220,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -232,7 +233,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1016000000
+              "duration": 878000000
             }
           },
           {
@@ -245,18 +246,36 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"$schema\": \"http://json-schema.org/draft-04/schema#\",\n\"type\": \"object\",\n\"properties\": {\n\"id\": {\n\"type\": \"integer\"\n},\n\"title\": {\n\"type\": \"string\"\n},\n\"dueDate\": {\n\"type\": \"string\"\n},\n\"completed\": {\n\"type\": \"boolean\"\n}\n}\n}",
+                "content": "{\n  \"id\": 1\n}",
                 "line": 55
               }
             ],
             "keyword": "And ",
             "line": 54,
+            "name": "I expect response should have a json like",
+            "match": {
+              "location": "features/support/steps.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"integer\"\n    },\n    \"title\": {\n      \"type\": \"string\"\n    },\n    \"dueDate\": {\n      \"type\": \"string\"\n    },\n    \"completed\": {\n      \"type\": \"boolean\"\n    }\n  }\n}",
+                "line": 61
+              }
+            ],
+            "keyword": "And ",
+            "line": 60,
             "name": "I expect response should have a json schema",
             "match": {
               "location": "features/support/steps.js:79"
@@ -282,7 +301,7 @@
         "description": "",
         "id": "request;testing-put-api",
         "keyword": "Scenario",
-        "line": 76,
+        "line": 82,
         "name": "Testing PUT API",
         "steps": [
           {
@@ -304,7 +323,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 77,
+            "line": 83,
             "name": "I make a PUT request to https://fakerestapi.azurewebsites.net/api/v1/Activities/1",
             "match": {
               "location": "features/support/steps.js:11"
@@ -317,12 +336,12 @@
           {
             "arguments": [
               {
-                "content": "{\n\"id\": 1,\n\"title\": \"string\",\n\"dueDate\": \"2022-05-12T09:42:21.790Z\",\n\"completed\": true\n}",
-                "line": 79
+                "content": "{\n   \"id\": 1,\n   \"title\": \"string\",\n   \"dueDate\": \"2022-05-12T09:42:21.790Z\",\n   \"completed\": true\n }",
+                "line": 85
               }
             ],
             "keyword": "And ",
-            "line": 78,
+            "line": 84,
             "name": "I set body to",
             "match": {
               "location": "features/support/steps.js:31"
@@ -335,45 +354,45 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 87,
+            "line": 93,
             "name": "I receive a response",
             "match": {
               "location": "features/support/steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 1115000000
+              "duration": 881000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 88,
+            "line": 94,
             "name": "I expect response should have a status 200",
             "match": {
               "location": "features/support/steps.js:51"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [
               {
-                "content": "{\n\"$schema\": \"http://json-schema.org/draft-04/schema#\",\n\"type\": \"object\",\n\"properties\": {\n\"id\": {\n\"type\": \"integer\"\n},\n\"title\": {\n\"type\": \"string\"\n},\n\"dueDate\": {\n\"type\": \"string\"\n},\n\"completed\": {\n\"type\": \"boolean\"\n}\n}\n}",
-                "line": 90
+                "content": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"integer\"\n    },\n    \"title\": {\n      \"type\": \"string\"\n    },\n    \"dueDate\": {\n      \"type\": \"string\"\n    },\n    \"completed\": {\n      \"type\": \"boolean\"\n    }\n  }\n}",
+                "line": 96
               }
             ],
             "keyword": "And ",
-            "line": 89,
+            "line": 95,
             "name": "I expect response should have a json schema",
             "match": {
               "location": "features/support/steps.js:79"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           },
           {

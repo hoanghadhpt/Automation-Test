@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1028000000
+              "duration": 1222000000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 14000000
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 28000000
             }
           }
         ],
@@ -140,20 +140,21 @@
             },
             "result": {
               "status": "passed",
-              "duration": 988000000
+              "duration": 1173000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 39,
-            "name": "I expect response should have a status 200",
+            "name": "I expect response should have a status 202",
             "match": {
               "location": "features/support/steps.js:51"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "failed",
+              "duration": 3000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: HTTP status 200 !== 202\n    + expected - actual\n\n    -200\n    +202\n\n    at Expect._validateStatus (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:96:14)\n    at Expect.validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:43:10)\n    at Have._validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:102:26)\n    at Have.status (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:27:10)\n    at World.<anonymous> (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/features/support/steps.js:52:31)"
             }
           },
           {

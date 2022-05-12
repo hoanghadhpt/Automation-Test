@@ -277,10 +277,10 @@ pre {
         <div class="navbar-header">
         
           <a class="navbar-brand">Cucumberjs Report</a>
-          <div class="project-name visible-md visible-lg">pactum-cucumber-boilerplate</div>
+          <div class="project-name visible-md visible-lg">automation-testing</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 0</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 2</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 1</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Thu May 12 2022 13:39:46 GMT+0700 (Indochina Time)</div>
+      <div class="generated-on">Thu May 12 2022 16:07:10 GMT+0700 (Indochina Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -381,14 +381,15 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturepactum_cucumber_boilerplatee0fccd19-7e4a-420e-bea8-223be91f18e2">
+                    <a data-toggle="collapse" href="#collapseFeatureautomation_testinge7ed8213-e489-4ffd-b4fd-6a2d74edb982">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Request
                         <span class="label-container">
-              
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
               <span class="label label-danger"
-                                                         title="2 Scenarios Failed">2</span>
+                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -397,7 +398,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturepactum_cucumber_boilerplatee0fccd19-7e4a-420e-bea8-223be91f18e2" class="panel-collapse collapse">
+            <div id="collapseFeatureautomation_testinge7ed8213-e489-4ffd-b4fd-6a2d74edb982" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     <div class="description">  In order to keep Regres api stable<br/>  As a tester<br/>  I want to make sure that everything works as expected</div>
@@ -412,10 +413,10 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplate7b251ee9-cf3a-4bf7-832d-c9857df5522e">
+                                <a data-toggle="collapse" href="#collapseScenarioautomation_testing6181b447-facc-4625-8298-0f12e82a4bf7">
                                     <div>
 
-                                        <div style="padding-right: 70px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Get Activities
@@ -423,13 +424,11 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="1 Steps Passed">1</span>
+                                                               title="4 Steps Passed">4</span>
                               
                               
-                              <span class="label label-warning"
-                                                                title="2 Steps Skipped">2</span>
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
+                              
+                              
                               
                             </span>
                                         </div>
@@ -438,10 +437,14 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplate7b251ee9-cf3a-4bf7-832d-c9857df5522e"
+                        <div id="collapseScenarioautomation_testing6181b447-facc-4625-8298-0f12e82a4bf7"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
+                                
+                                
+                                
+                                
                                 
                                 
                                 
@@ -459,7 +462,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1ms
+                               < 1ms
                               </span>
                             
                          
@@ -487,8 +490,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -497,7 +500,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1ms
+                               1s 222ms
                               </span>
                             
                          
@@ -508,64 +511,6 @@ pre {
                       </span>
                                 
                                 
-
-                                    
-                                    <a href="#error0_01"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_01"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_01">
-                                            <br> TypeError: The "url" argument must be of type string. Received undefined
-    at new NodeError (node:internal/errors:372:5)
-    at validateString (node:internal/validators:120:11)
-    at Url.parse (node:url:168:3)
-    at Object.urlParse [as parse] (node:url:155:13)
-    at setBaseUrl (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/helpers/requestProcessor.js:30:20)
-    at Object.process (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/helpers/requestProcessor.js:12:5)
-    at Tosser.toss (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Tosser.js:29:39)
-    at Spec.toss (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:449:19)
-    at World.(anonymous) (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/steps_when.js:7:14)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_01" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>TypeError: The "url" argument must be of type string. Received undefined
-    at new NodeError (node:internal/errors:372:5)
-    at validateString (node:internal/validators:120:11)
-    at Url.parse (node:url:168:3)
-    at Object.urlParse [as parse] (node:url:155:13)
-    at setBaseUrl (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/helpers/requestProcessor.js:30:20)
-    at Object.process (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/helpers/requestProcessor.js:12:5)
-    at Tosser.toss (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Tosser.js:29:39)
-    at Spec.toss (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:449:19)
-    at World.(anonymous) (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/steps_when.js:7:14)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                     
 
@@ -583,8 +528,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -593,7 +538,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               2ms
                               </span>
                             
                          
@@ -621,8 +566,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -631,7 +576,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               14ms
                               </span>
                             
                          
@@ -680,6 +625,8 @@ pre {
                                 </p>
                                 
                                 
+                                
+                                
                             </div>
                         </div>
                     </div>
@@ -693,7 +640,7 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplateb3598438-9c78-4c2d-8d86-48954665a7a1">
+                                <a data-toggle="collapse" href="#collapseScenarioautomation_testingd1372ecc-23ec-4a65-a4ea-b9ebd2bd30bd">
                                     <div>
 
                                         <div style="padding-right: 50px">
@@ -703,11 +650,11 @@ pre {
                                         </div>
                                         <div>
                             <span class="label-container">
+                              <span class="label label-success"
+                                                               title="2 Steps Passed">2</span>
                               
                               
                               
-                              <span class="label label-warning"
-                                                                title="2 Steps Skipped">2</span>
                               <span class="label label-danger"
                                                                title="1 Steps Failed">1</span>
                               
@@ -718,10 +665,14 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplateb3598438-9c78-4c2d-8d86-48954665a7a1"
+                        <div id="collapseScenarioautomation_testingd1372ecc-23ec-4a65-a4ea-b9ebd2bd30bd"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
+                                
+                                
+                                
+                                
                                 
                                 
                                 
@@ -729,8 +680,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
@@ -752,21 +703,104 @@ pre {
                                 
 
                                     
-                                    <a href="#error0_10"
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I receive a response</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 173ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I expect response should have a status 202</span>
+                            
+                          
+                              <span class="step-duration">
+                               3ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_14"
                                        data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_10"
+                                    <div id="error0_14"
                                          class="collapse">
                                         <pre class="info show-modal"
                                              data-toggle="modal"
                                              style="cursor: pointer"
-                                             data-target="#error-modal-0_10">
-                                            <br> Error: Duplicate request initiated. Existing request - GET https://fakerestapi.azurewebsites.net/api/v1/Activities
-    at validateRequestUrl (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:475:11)
-    at Spec.get (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:62:5)
-    at World.(anonymous) (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/step_given.js:7:29)</pre>
+                                             data-target="#error-modal-0_14">
+                                            <br> AssertionError [ERR_ASSERTION]: HTTP status 200 !== 202
+    + expected - actual
+
+    -200
+    +202
+
+    at Expect._validateStatus (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:96:14)
+    at Expect.validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:43:10)
+    at Have._validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:102:26)
+    at Have.status (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:27:10)
+    at World.(anonymous) (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/features/support/steps.js:52:31)</pre>
                                     </div>
 
-                                <div class="modal fade" id="error-modal-0_10" tabindex="-1" role="dialog"
+                                <div class="modal fade" id="error-modal-0_14" tabindex="-1" role="dialog"
                                      aria-labelledby="stacktraceModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
@@ -780,10 +814,17 @@ pre {
                                             </div>
                                             <div class="modal-body">
                                                 <h5>
-                                                    <pre><br>Error: Duplicate request initiated. Existing request - GET https://fakerestapi.azurewebsites.net/api/v1/Activities
-    at validateRequestUrl (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:475:11)
-    at Spec.get (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/Spec.js:62:5)
-    at World.(anonymous) (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/step_given.js:7:29)</pre>
+                                                    <pre><br>AssertionError [ERR_ASSERTION]: HTTP status 200 !== 202
+    + expected - actual
+
+    -200
+    +202
+
+    at Expect._validateStatus (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:96:14)
+    at Expect.validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:43:10)
+    at Have._validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:102:26)
+    at Have.status (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:27:10)
+    at World.(anonymous) (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/features/support/steps.js:52:31)</pre>
                                                 </h5>
                                             </div>
 
@@ -808,80 +849,6 @@ pre {
                                 </p>
                                 
                                 
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> I receive a response</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> I expect response should have a status 400</span>
-                            
-                          
-                              <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
                                 
                                 
                             </div>
@@ -931,8 +898,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 2,
-                                                            "passed" : 0,
+                                                            "failed" : 1,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

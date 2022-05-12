@@ -1,5 +1,5 @@
 {
-  "name": "pactum-cucumber-boilerplate",
+  "name": "automation-testing",
   "version": "1.0.0",
   "description": "Boilerplate project to run REST API tests with Cucumber &amp; Pactum",
   "main": "index.js",

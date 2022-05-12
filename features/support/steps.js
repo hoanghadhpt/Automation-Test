@@ -99,6 +99,7 @@ Then(/^I store response at (.*) as (.*)$/, function (path, name) {
   spec.stores(name, path);
 });
 
-After(() => {
+After((scenario) => {
+  spec.response().should.have.bodyLog(JSON.stringify(scenario.pickle.name));
   spec.end();
 });

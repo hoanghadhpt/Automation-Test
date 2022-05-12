@@ -4,10 +4,10 @@
     "elements": [
       {
         "description": "",
-        "id": "request;get-inventory",
+        "id": "request;get-activities",
         "keyword": "Scenario",
         "line": 7,
-        "name": "Get Inventory",
+        "name": "Get Activities",
         "steps": [
           {
             "keyword": "Before",
@@ -29,13 +29,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "I make a GET request to https://petstore.swagger.io",
+            "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "match": {
               "location": "features/support/steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -48,7 +48,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 972000000
+              "duration": 1292000000
             }
           },
           {
@@ -61,7 +61,100 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"$schema\": \"http://json-schema.org/draft-04/schema#\",\n\"type\": \"array\",\n\"items\": {\n\"type\": \"object\",\n\"properties\": {\n \"id\": {\n   \"type\": \"integer\"\n },\n \"title\": {\n   \"type\": \"string\"\n },\n \"dueDate\": {\n   \"type\": \"string\"\n },\n \"completed\": {\n   \"type\": \"boolean\"\n }\n}\n}\n}",
+                "line": 12
+              }
+            ],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I expect response should have a json schema",
+            "match": {
+              "location": "features/support/steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "request;just-another-scenario",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Just Another Scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
+            "match": {
+              "location": "features/support/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I receive a response",
+            "match": {
+              "location": "features/support/steps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I expect response should have a status 400",
+            "match": {
+              "location": "features/support/steps.js:50"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: HTTP status 200 !== 400\n    + expected - actual\n\n    -200\n    +400\n\n    at Expect._validateStatus (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/expect.js:96:14)\n    at Expect.validate (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/models/expect.js:43:10)\n    at Have._validate (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/exports/expect.js:101:26)\n    at Have.status (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/node_modules/pactum/src/exports/expect.js:26:10)\n    at World.<anonymous> (/Users/hoangha/Downloads/pactum-cucumber-boilerplate-master/features/support/steps.js:51:31)"
             }
           },
           {

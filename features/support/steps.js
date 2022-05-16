@@ -10,6 +10,7 @@ Before(() => {
 
 Given(/^I make a (.*) request to (.*)$/, function (method, endpoint) {
   spec[method.toLowerCase()](endpoint);
+  
 });
 
 Given(/^I set path param (.*) to (.*)$/, function (key, value) {
@@ -46,6 +47,7 @@ Given(/^I set multi-part form param (.*) to (.*)$/, function (key, value) {
 
 When('I receive a response', async function () {
   await spec.toss();
+  spec.retry(2);
 });
 
 Then('I expect response should have a status {int}', function (code) {

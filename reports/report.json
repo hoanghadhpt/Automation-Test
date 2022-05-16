@@ -44,11 +44,11 @@
             "line": 9,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/steps.js:47"
+              "location": "features/support/steps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 1137000000
+              "duration": 1076000000
             }
           },
           {
@@ -57,11 +57,11 @@
             "line": 10,
             "name": "I expect response should have a status 200",
             "match": {
-              "location": "features/support/steps.js:51"
+              "location": "features/support/steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 11,
             "name": "I expect response should have a json schema",
             "match": {
-              "location": "features/support/steps.js:79"
+              "location": "features/support/steps.js:81"
             },
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 13000000
             }
           },
           {
@@ -87,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 7000000
             }
           }
         ],
@@ -114,7 +114,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -136,11 +136,11 @@
             "line": 38,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/steps.js:47"
+              "location": "features/support/steps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 1006000000
+              "duration": 940000000
             }
           },
           {
@@ -149,12 +149,12 @@
             "line": 39,
             "name": "I expect response should have a status 400",
             "match": {
-              "location": "features/support/steps.js:51"
+              "location": "features/support/steps.js:53"
             },
             "result": {
               "status": "failed",
-              "duration": 7000000,
-              "error_message": "AssertionError [ERR_ASSERTION]: HTTP status 200 !== 400\n    + expected - actual\n\n    -200\n    +400\n\n    at Expect._validateStatus (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:96:14)\n    at Expect.validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:43:10)\n    at Have._validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:102:26)\n    at Have.status (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:27:10)\n    at World.<anonymous> (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/features/support/steps.js:52:31)"
+              "duration": 5000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: HTTP status 200 !== 400\n    + expected - actual\n\n    -200\n    +400\n\n    at Expect._validateStatus (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:96:14)\n    at Expect.validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:43:10)\n    at Have._validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:102:26)\n    at Have.status (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:27:10)\n    at World.<anonymous> (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/features/support/steps.js:54:31)"
             }
           },
           {
@@ -162,7 +162,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -216,7 +216,7 @@
             "line": 43,
             "name": "I set body to",
             "match": {
-              "location": "features/support/steps.js:31"
+              "location": "features/support/steps.js:32"
             },
             "result": {
               "status": "passed",
@@ -229,11 +229,11 @@
             "line": 52,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/steps.js:47"
+              "location": "features/support/steps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 878000000
+              "duration": 1024000000
             }
           },
           {
@@ -242,7 +242,7 @@
             "line": 53,
             "name": "I expect response should have a status 200",
             "match": {
-              "location": "features/support/steps.js:51"
+              "location": "features/support/steps.js:53"
             },
             "result": {
               "status": "passed",
@@ -260,11 +260,11 @@
             "line": 54,
             "name": "I expect response should have a json like",
             "match": {
-              "location": "features/support/steps.js:71"
+              "location": "features/support/steps.js:73"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -278,7 +278,7 @@
             "line": 60,
             "name": "I expect response should have a json schema",
             "match": {
-              "location": "features/support/steps.js:79"
+              "location": "features/support/steps.js:81"
             },
             "result": {
               "status": "passed",
@@ -330,7 +330,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -344,7 +344,7 @@
             "line": 84,
             "name": "I set body to",
             "match": {
-              "location": "features/support/steps.js:31"
+              "location": "features/support/steps.js:32"
             },
             "result": {
               "status": "passed",
@@ -357,11 +357,11 @@
             "line": 93,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/steps.js:47"
+              "location": "features/support/steps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 881000000
+              "duration": 943000000
             }
           },
           {
@@ -370,11 +370,11 @@
             "line": 94,
             "name": "I expect response should have a status 200",
             "match": {
-              "location": "features/support/steps.js:51"
+              "location": "features/support/steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -388,7 +388,7 @@
             "line": 95,
             "name": "I expect response should have a json schema",
             "match": {
-              "location": "features/support/steps.js:79"
+              "location": "features/support/steps.js:81"
             },
             "result": {
               "status": "passed",

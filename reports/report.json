@@ -31,7 +31,7 @@
             "line": 8,
             "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "match": {
-              "location": "features/support/api_steps/steps.js:11"
+              "location": "features/Step_Definations/api_steps/steps.js:11"
             },
             "result": {
               "status": "passed",
@@ -44,11 +44,11 @@
             "line": 9,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/api_steps/steps.js:48"
+              "location": "features/Step_Definations/api_steps/steps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 940000000
+              "duration": 897000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "line": 10,
             "name": "I expect response should have a status 200",
             "match": {
-              "location": "features/support/api_steps/steps.js:53"
+              "location": "features/Step_Definations/api_steps/steps.js:53"
             },
             "result": {
               "status": "passed",
@@ -69,7 +69,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 27000000
             }
           }
         ],

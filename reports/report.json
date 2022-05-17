@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -31,7 +31,7 @@
             "line": 8,
             "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
             "match": {
-              "location": "features/support/steps.js:11"
+              "location": "features/support/api_steps/steps.js:11"
             },
             "result": {
               "status": "passed",
@@ -44,11 +44,11 @@
             "line": 9,
             "name": "I receive a response",
             "match": {
-              "location": "features/support/steps.js:48"
+              "location": "features/support/api_steps/steps.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 1076000000
+              "duration": 1291000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "line": 10,
             "name": "I expect response should have a status 200",
             "match": {
-              "location": "features/support/steps.js:53"
+              "location": "features/support/api_steps/steps.js:53"
             },
             "result": {
               "status": "passed",
@@ -65,342 +65,11 @@
             }
           },
           {
-            "arguments": [
-              {
-                "content": "{\n \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n \"type\": \"array\",\n \"items\": {\n   \"type\": \"object\",\n   \"properties\": {\n     \"id\": {\n       \"type\": \"integer\"\n     },\n     \"title\": {\n       \"type\": \"string\"\n     },\n     \"dueDate\": {\n       \"type\": \"string\"\n     },\n     \"completed\": {\n       \"type\": \"boolean\"\n     }\n   }\n }\n}",
-                "line": 12
-              }
-            ],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I expect response should have a json schema",
-            "match": {
-              "location": "features/support/steps.js:81"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 13000000
-            }
-          },
-          {
             "keyword": "After",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 7000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "request;just-another-scenario-get-fail",
-        "keyword": "Scenario",
-        "line": 36,
-        "name": "Just Another Scenario GET Fail",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 37,
-            "name": "I make a GET request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
-            "match": {
-              "location": "features/support/steps.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 38,
-            "name": "I receive a response",
-            "match": {
-              "location": "features/support/steps.js:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 940000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 39,
-            "name": "I expect response should have a status 400",
-            "match": {
-              "location": "features/support/steps.js:53"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5000000,
-              "error_message": "AssertionError [ERR_ASSERTION]: HTTP status 200 !== 400\n    + expected - actual\n\n    -200\n    +400\n\n    at Expect._validateStatus (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:96:14)\n    at Expect.validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/models/expect.js:43:10)\n    at Have._validate (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:102:26)\n    at Have.status (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/node_modules/pactum/src/exports/expect.js:27:10)\n    at World.<anonymous> (/Users/hoangha/Documents/test/Automation-Test/Automation-Test/features/support/steps.js:54:31)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "request;testing-post-api",
-        "keyword": "Scenario",
-        "line": 41,
-        "name": "Testing POST API",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 42,
-            "name": "I make a POST request to https://fakerestapi.azurewebsites.net/api/v1/Activities",
-            "match": {
-              "location": "features/support/steps.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n   \"id\": 1,\n   \"title\": \"Title Here\",\n   \"dueDate\": \"2022-05-12T09:38:55.267Z\",\n   \"completed\": true\n }",
-                "line": 44
-              }
-            ],
-            "keyword": "And ",
-            "line": 43,
-            "name": "I set body to",
-            "match": {
-              "location": "features/support/steps.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 52,
-            "name": "I receive a response",
-            "match": {
-              "location": "features/support/steps.js:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1024000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 53,
-            "name": "I expect response should have a status 200",
-            "match": {
-              "location": "features/support/steps.js:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n  \"id\": 1\n}",
-                "line": 55
-              }
-            ],
-            "keyword": "And ",
-            "line": 54,
-            "name": "I expect response should have a json like",
-            "match": {
-              "location": "features/support/steps.js:73"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"integer\"\n    },\n    \"title\": {\n      \"type\": \"string\"\n    },\n    \"dueDate\": {\n      \"type\": \"string\"\n    },\n    \"completed\": {\n      \"type\": \"boolean\"\n    }\n  }\n}",
-                "line": 61
-              }
-            ],
-            "keyword": "And ",
-            "line": 60,
-            "name": "I expect response should have a json schema",
-            "match": {
-              "location": "features/support/steps.js:81"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "request;testing-put-api",
-        "keyword": "Scenario",
-        "line": 82,
-        "name": "Testing PUT API",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 83,
-            "name": "I make a PUT request to https://fakerestapi.azurewebsites.net/api/v1/Activities/1",
-            "match": {
-              "location": "features/support/steps.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n   \"id\": 1,\n   \"title\": \"string\",\n   \"dueDate\": \"2022-05-12T09:42:21.790Z\",\n   \"completed\": true\n }",
-                "line": 85
-              }
-            ],
-            "keyword": "And ",
-            "line": 84,
-            "name": "I set body to",
-            "match": {
-              "location": "features/support/steps.js:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 93,
-            "name": "I receive a response",
-            "match": {
-              "location": "features/support/steps.js:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 943000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 94,
-            "name": "I expect response should have a status 200",
-            "match": {
-              "location": "features/support/steps.js:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "content": "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"integer\"\n    },\n    \"title\": {\n      \"type\": \"string\"\n    },\n    \"dueDate\": {\n      \"type\": \"string\"\n    },\n    \"completed\": {\n      \"type\": \"boolean\"\n    }\n  }\n}",
-                "line": 96
-              }
-            ],
-            "keyword": "And ",
-            "line": 95,
-            "name": "I expect response should have a json schema",
-            "match": {
-              "location": "features/support/steps.js:81"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 1000000
+              "duration": 29000000
             }
           }
         ],
